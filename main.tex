@@ -1,0 +1,175 @@
+\documentclass[a4paper,12pt]{vitexam}
+%\usepackage{vitqp}
+
+%%---Exam Details starts (to be filled by the faculty) -------
+\logo{img/vitlogo}
+\exam{Final Assessment Test II - April 2022}
+\examshortname{FAT II} % used in audit form
+\programme{Integrated M.Tech. I Year}
+\semester{Win 2021-22}
+\course{Applications of Differential and Difference Equations}
+\coursecode{MAT2002}
+
+\faculty{Dr.\,David Raj Micheal}
+\classNumber{CH2021222300226}
+\slot{B2+TB2}
+\duration{180 Minutes}
+\maxmarks{\numpoints} %\numpoints
+
+
+\formoderation
+%\printanswers
+
+\begin{document}
+
+\begin{instructions}
+	\begin{enumerate}[label={(\roman*)},itemsep=0pt]
+		\item Non-programmable Calculators are allowed.
+		\item Any misprinted values can be assumed suitably.
+		\item This question paper contains \numquestions\ questions and \numpages\ page(s).
+	\end{enumerate}
+\end{instructions}
+	
+	
+	
+\partmarks{$10\times 10 = 100$}
+\part{Answer any TEN  Questions}
+
+%\textbf{Syllabus}
+%\begin{enumerate}
+%	\item[5 marks] Solutions of Cauchy-Euler and
+%	Cauchy-Legendre differential equations
+%	\item[15 marks] Module 04: Solution of differential equations through Laplace transform and matrix method
+%	\item[10 marks] Module 05: Strum Liouville’s problems and power series Solutions:
+%\end{enumerate}
+
+\begin{questions}
+
+% Fourier Series
+\module{01}  \co{01} \level{Easy} \bl{K2} \hots{No}
+
+\question[10]  Find   the Fourier series expansion of 
+$$ f(x) = \begin{cases}
+	0 & 0\leq x \leq \pi \\
+	\cos x & \pi \leq x \leq  2\pi
+\end{cases}.
+$$
+
+\module{01}  \co{01} \level{Medium} \bl{K2} \hots{No}
+
+\question[10]  Determine the first two harmonics of the Fourier series for the following data:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+	\hline 
+	$x$ & $0$ & $\frac {\pi}{3}$ & $\frac {2\pi}{3}$ & $\pi$ & $\frac {4\pi}{3}$ & $\frac {5\pi}{3}$ \\ \hline 
+	$y$ & 1.98&1.30&1.05&1.30& $-0.88$ &$-0.25$ \\ \hline 
+\end{tabular}
+\end{center}
+
+\module{02}  \co{02} \level{Easy} \bl{K2} \hots{No}
+
+\question[10] Find $P$ such that $P^{-1}AP = D$, where $D$ is a diagonal matrix for 
+$$A = \begin{bmatrix}
+	-1 & 1 & 0 \\ 0 & 2 & -1 \\  0 & 0 & 3 
+\end{bmatrix}.$$
+
+\module{02}  \co{02} \level{Easy} \bl{K2} \hots{No}
+
+\question
+\begin{parts}
+\part[5] 
+Let $A = \begin{bmatrix}
+	3 & 3 & 0 \\ 0 & 2 & 0 \\  1 & 1 & 1 
+\end{bmatrix}$ and  $x^3 - 6 x^2  +11x - 6 = 0$ be the characteristic equation of $A$. Find $A^{-1}$ using Cayley-Hamilton theorem.
+
+\module{04}  \co{03} \level{Medium} \bl{K2} \hots{No}
+
+\part[5] Use Laplace transform to solve
+$$ y^{\prime\prime} + 4y^{\prime} + 2y = u(t-2), \quad y(0)=0=y^\prime(0),$$
+where $u$ is an unit step function.
+\end{parts}
+
+\module{03}  \co{03} \level{Hard} \bl{K2} \hots{No}
+
+\question[10] 
+Solve $y^{\prime\prime} - 2y^\prime = e^x \sin x + 5$ using the method of undetermined coefficients.
+
+\begin{solution}
+$y = A + B e^{2x} - \frac 1 2 e^x \sin x$
+\end{solution} 
+
+\module{03}  \co{03} \level{Medium} \bl{K2} \hots{No}
+
+\question[10]  Solve $(3x+2)^2 y ^{\prime \prime } + 3 ( 3x + 2) y^\prime -36 y = 3x^2 + 4x +1. $
+\begin{solution}
+	$ y = c_1 (3x+2)^2 + c_2 (3x + 2)^{-2} + \frac 1 {108} \left( (3x+2)^2 \log (3x+2) +1 \right)$
+\end{solution}
+
+
+
+
+\module{04}  \co{03} \level{Hard} \bl{K2} \hots{Yes}
+
+\question[10] A particle is moving along a plane curve,  the co-ordinate $(x,y)$ at time $t$ is given by,
+\begin{align*}
+	\frac{dy}{dt} + x - 2y  & = \cos 2t \\
+	\frac{dx}{dt} + 2x - y & = \sin 2t			 
+\end{align*}
+for $t > 0$. If at $t = 0$, $x =1$ and $y = 0$, use Laplace transform to find the curve $(x(t),y(t))$ on which the particle is moving. 
+
+
+
+
+\module{05}  \co{04} \level{Hard} \bl{K2} \hots{Yes}
+
+\question[10] Find the power series solution about $x=0$ of the following differential equation equation $$(x^2 + 2x -1)y^{\prime\prime} + 3y^{\prime}= 0.$$
+
+\module{05,06}  \co{04,05} \level{Hard} \bl{K2} \hots{Yes}
+
+\question
+\begin{parts}
+\part[5]  Find the Eigen functions of the Strum-Liouville problem $$y^{\prime\prime} + \lambda y =0,\quad y(0) = 0, 
+\quad y(\pi) = 0$$
+and verify their orthogonality.
+
+%\module{06}  \co{05} \level{Easy} \bl{K2} \hots{No}
+
+\part[5]  Use Convolution theorem to find the inverse Z-transform of $\left(\frac{z}{z-a}\right)^2$ and hence deduce for $\left(\frac{2z}{2z-1}\right)^2$.
+\end{parts}
+
+%Z-Transform
+\module{06}  \co{05} \level{Easy} \bl{K2} \hots{No}
+
+\question  Find the Z-transform of the following:
+\begin{parts}
+	\part[3] $2n + 4\sin \frac{n\pi}{2} - 4a^4$
+	\part[3] $e^{-2n} \cos n\theta$
+	\part[4]  $\frac{n}{(n+2)!}$
+\end{parts}
+
+
+
+
+% Difference Equations
+\module{07}  \co{05} \level{Medium} \bl{K2} \hots{No}
+
+\question[10] Solve the recurrence relation 
+$$ a_n = 4a_{n-1} - 4 a_{n-2} + (n+1) 2^n ,$$
+given that $a_0=1$ and $a_1 = 2$.
+
+\module{07}  \co{05} \level{Easy} \bl{K2} \hots{No}
+
+\question[10] Use  Z-transform to solve the difference equation 
+$$u_{n+2} - 4 u_{n+1} + 3u_n = 5^n .$$
+
+
+
+\end{questions}
+
+\firstmoderatorname{Dr. Mini Ghosh}
+\firstmoderatordesignation{Assistant Professor}
+
+%\printauditform
+
+\end{document}
