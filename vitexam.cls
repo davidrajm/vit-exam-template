@@ -60,7 +60,8 @@ David Raj Micheal]
 	\addcontentsline{toc}{part}{#1}%
 	\fi
 	{\fullwidth{\centering
-			\Large\bfseries \partname\nobreakspace--\nobreakspace\thepart \space {\boldmath \@partmarks }
+			\Large\bfseries 
+			\vspace*{-\baselineskip} \partname\nobreakspace--\nobreakspace\thepart \space {\boldmath \@partmarks }
 			\par\nobreak
 			\large \bfseries #2%
 			\markboth{}{}\par}}%
@@ -160,14 +161,14 @@ David Raj Micheal]
 
 \newcommand{\printexamtop}{
 	%% --- Exam Top starts --- 
-	\begin{flushright}
-		\renewcommand*{\arraystretch}{1.5}
-		\begin{tabular}{|p{.1\textwidth}c|p{.25\textwidth}|}
-			\hline 
-			\textbf{Reg.No} & & \\ \hline 
-			\textbf{Name}  & &\\ \hline 
-		\end{tabular}
-	\end{flushright}
+%	\begin{flushright}
+%		\renewcommand*{\arraystretch}{1.5}
+%		\begin{tabular}{|p{.1\textwidth}c|p{.25\textwidth}|}
+%			\hline 
+%			\textbf{Reg.No} & & \\ \hline 
+%			\textbf{Name}  & &\\ \hline 
+%		\end{tabular}
+%	\end{flushright}
 	
 	\begin{center}
 		\@logo
