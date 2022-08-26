@@ -11,7 +11,10 @@ In this repository, I have made my source code open which I use it for my questi
  1. Automatic generation of labels to be affixed when submitting to COE office.
  1. Option to set the password for the pdf file
 
+## How to set a password for the pdf file?
 
+  - In the second line of the `main.tex` , uncomment the line `\special{pdf:encrypt userpw (abc) ownerpw (xyz) length 128}`
+  - Change your desired password instead of `abc` and `xyz` for the user password and the owner password. 
 
 ## Latest Changes:
  - Added command to print the labels on the covers while submitting the qp's to the exam cell.
