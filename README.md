@@ -10,6 +10,18 @@ In this repository, I have made my source code open which I use it for my questi
  1. Automatic generation of pre-audit file which is to be submitted the division chair/HOD.
  1. Automatic generation of labels to be affixed when submitting to COE office.
  1. Option to set the password for the pdf file
+ 
+## How to show or hide the solutions.
+
+ 1. Type the solutions below the question as like the following:
+   ```
+   \question 
+   
+   \begin{solution}
+   Your solution goes here...
+   \end{solution}
+   ```
+ 1. In the preamble, comment or uncomment `\printanswers` to show or hide the solutions.
 
 ## How to set a password for the pdf file?
 
