@@ -28,8 +28,11 @@ In this repository, I have made my source code open which I use it for my questi
 
 There are some special commands given to provide the details about the question papers such as `\exam` (for exam name), `\examshortname` (to use it audit form), `\semester` etc., to create the exam top. Providing the details in the respective commands fills the exam top in the question paper and in the audit form. These details are also used in the label creation in the later case.
 
-![examtop](https://user-images.githubusercontent.com/15086149/186879356-e9e408ec-0a5b-4340-9b36-fdd119efe9d1.png)
+<details>
+<summary>Output</summary>
+<img src="https://user-images.githubusercontent.com/15086149/186879356-e9e408ec-0a5b-4340-9b36-fdd119efe9d1.png" />
 
+</details>
 
 ## Typing instructions.
 
