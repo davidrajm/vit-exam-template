@@ -43,6 +43,14 @@ __Output:__
 ![parts](https://user-images.githubusercontent.com/15086149/186879933-16d316be-1101-48b9-a69c-3a177048ebd8.png)
 
 
+## Typing the Module, CO, BL details.
+
+In any question paper, now that we have mark the module, CO, Blooming Level Taxonomies and that can be now achieved by supplying 
+`\module{}`, `\co{}`, etc., before each question. 
+
+Now to show this details for the moderation purpose, uncomment `\formoderation` and comment it show only the questions. 
+
+__Note:__ If a question does not contains this details, then the previous question's co details are used (I am working on it to avoid this!)
 
  
 ## How to show or hide the solutions.
