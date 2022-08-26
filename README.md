@@ -48,7 +48,21 @@ __Output:__
 In any question paper, now that we have mark the module, CO, Blooming Level Taxonomies and that can be now achieved by supplying 
 `\module{}`, `\co{}`, etc., before each question. 
 
-Now to show this details for the moderation purpose, uncomment `\formoderation` and comment it show only the questions. 
+Now to show this details for the moderation purpose, uncomment `\formoderation` and comment it show only the questions. Also note that the marks for each question is auto fetched from `\question[marks]`. 
+
+We also want to remark that the marks for the questions with sub divisions should be given only on the parts and not on the quesitons. For example,
+
+```
+\module{02}  \co{02} \level{Easy} \bl{K2} \hots{No}
+\question
+\begin{parts}
+\part[5] First sub division...
+
+\module{04}  \co{03} \level{Medium} \bl{K2} \hots{No}
+
+\part[5] Second sub division....
+\end{parts}
+```
 
 __Note:__ If a question does not contains this details, then the previous question's co details are used (I am working on it to avoid this!)
 
