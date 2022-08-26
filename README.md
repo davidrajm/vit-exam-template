@@ -7,12 +7,12 @@ In this repository, I have made my source code open which I use it for my questi
  1. [Features](https://github.com/davidrajm/vit-exam-template/#features)
  2. [Defining Exam Top Essestials](https://github.com/davidrajm/vit-exam-template/#defining-exam-top-essestials)
  3. [Typing instructions](https://github.com/davidrajm/vit-exam-template/#typing-instructions)
- 4. [Marks for the parts](https://github.com/davidrajm/vit-exam-template/edit/main/README.md#marks-for-the-parts)
- 5. [Typing the Module, CO, BL details](https://github.com/davidrajm/vit-exam-template/edit/main/README.md#typing-the-module-co-bl-details)
- 6. [How to show or hide the solutions](https://github.com/davidrajm/vit-exam-template/edit/main/README.md#how-to-show-or-hide-the-solutions)
- 7. [How to set a password for the pdf file](https://github.com/davidrajm/vit-exam-template/edit/main/README.md#how-to-set-a-password-for-the-pdf-file)
- 8. [How to print the labels for the covers](https://github.com/davidrajm/vit-exam-template/edit/main/README.md#how-to-print-the-labels-for-the-covers)
- 9. [Latest Changes](https://github.com/davidrajm/vit-exam-template/edit/main/README.md#latest-changes)
+ 4. [Marks for the parts](https://github.com/davidrajm/vit-exam-template/#marks-for-the-parts)
+ 5. [Typing the Module, CO, BL details](https://github.com/davidrajm/vit-exam-template/#typing-the-module-co-bl-details)
+ 6. [How to show or hide the solutions](https://github.com/davidrajm/vit-exam-template/#how-to-show-or-hide-the-solutions)
+ 7. [How to set a password for the pdf file](https://github.com/davidrajm/vit-exam-template/#how-to-set-a-password-for-the-pdf-file)
+ 8. [How to print the labels for the covers](https://github.com/davidrajm/vit-exam-template/#how-to-print-the-labels-for-the-covers)
+ 9. [Latest Changes](https://github.com/davidrajm/vit-exam-template/#latest-changes)
 
 ## Features 
 
