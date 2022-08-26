@@ -362,11 +362,15 @@ David Raj Micheal]
 \def\@examdate{}
 \newcommand{\examdate}[1]{\def\@examdate{#1}}
 
-\def\@when{}
-\newcommand{\when}[1]{\def\@when{#1}}
+\def\@examtime{}
+\newcommand{\examtime}[1]{\def\@examtime{#1}}
+
+\def\@empid{}
+\newcommand{\empid}[1]{\def\@empid{#1}}
 
 \RequirePackage{pgffor,pgfmath}
 
+\RequirePackage{array}
 \newcommand{\printlabels}{
 	\clearpage
 	\thispagestyle{empty}
@@ -374,16 +378,21 @@ David Raj Micheal]
 		\foreach \student [count=\s] in \@students{
 			\ifnum\c=\s
 			\begin{flushleft}
-				\begin{tabular}{lcl}
-					Exam Date & : & \@examdate \\
+				\large  
+				\renewcommand*{\arraystretch}{1.5}
+				\begin{tabular}{|>{\bfseries}l>{\bfseries}cl|}
+					\hline 
+					Programme & : & \@programme\\
+					Exam Date \& Time & : & \@examdate \ \@examtime\\
 					Room Number & : & \class \\
-					Course & : & \@course\\
 					Course Code & : & \@coursecode \\
-					Slot & : & \@slot \\
-					Class Id & : & \@classNumber \\
-					Exam Time & : & \@when
+					Course Name & : & \@course\\
+					Class Id \& Slot & : & \@classNumber\ \@slot \\
+					Total QP Alloted & : & \student\\
+					Faculty \& Emp. Id & : & \@faculty \space (\@empid) \\ \hline 
 				\end{tabular}
 			\end{flushleft}
+		\bigskip
 			\fi
 			
 		}
