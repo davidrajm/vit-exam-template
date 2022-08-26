@@ -23,7 +23,7 @@ There are some special commands given to provide the details about the question 
 
 Instructions can be typed in the special environment called `instruction`
 
-```
+```tex
 \begin{instructions}
 Your instructions
 \end{instructions}
@@ -33,7 +33,7 @@ Your instructions
 
 You might want to split the question paper in to multiple parts and the parts marks and the title of the parts can be typed as follows.
 
-``` 
+```tex
 \partmarks{$10\times 10 = 100$}
 \part{Answer any TEN  Questions}
 ```
@@ -52,7 +52,7 @@ Now to show this details for the moderation purpose, uncomment `\formoderation` 
 
 We also want to remark that the marks for the questions with sub divisions should be given only on the parts and not on the quesitons. For example,
 
-```
+```tex
 \module{02}  \co{02} \level{Easy} \bl{K2} \hots{No}
 \question
 \begin{parts}
@@ -70,7 +70,7 @@ __Note:__ If a question does not contains this details, then the previous questi
 ## How to show or hide the solutions.
 
  1. Type the solutions below the question as like the following:
-   ```
+   ```tex
    \question 
    
    \begin{solution}
@@ -88,7 +88,7 @@ __Note:__ If a question does not contains this details, then the previous questi
 
 You also might want to print the labels for the covers to be submitted to the CEO office. To generate the labels, in addition to the examtop details, you also might have to set the following.
 
-```
+```tex
 \examdate{30/08/2022}
 \examtime{9.00 AM to 10.30 AM}
 \classrooms{DB--108,DB--203 ,DB--204}
