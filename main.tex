@@ -12,47 +12,42 @@
 \course{Applications of Differential and Difference Equations}
 \coursecode{MAT2002}
 
-\faculty{Dr.\,David Raj Micheal}
-\empid{51942}
-\classNumber{CH2021222300226}
+\faculty{Dr.\,Dhanasekar, Dr.\,V.\,Parthiban, Dr.\,Manivannan, Dr.\,David Raj Micheal,} % write all the faculties in case of common qp. (Use \, for the space in the names to avoid hypernation.)
+\classNumber{CH2021222300226, 227,228, 229} % write all the class numbers in case of common qp.
 \slot{B2+TB2}
 \duration{180 Minutes}
 \maxmarks{\numpoints} %\numpoints
 
 
 %\formoderation
-\printanswers
+%\printanswers
 
 
 %%--For printing Labels
+\slotFaculty{Dr. David Raj Micheal}
+\slotClassNumber{CH2021222300226}
+\slotFacultyempid{51942}
+\slotFacultyMobile{+91 99999 00000}
 \examdate{30/08/2022 }
 \examtime{9.00 AM to 10.30 AM }
 \classrooms{DB--108,DB--203 ,DB--204}
-\students{9,36,25}
+\students{9+2,36+2,25+2}
 
 
 \begin{document}
 
-\begin{instructions}
-	\begin{enumerate}[label={(\roman*)},itemsep=0pt]
-		\item Non-programmable Calculators are allowed.
-		\item Any misprinted values can be assumed suitably.
-		\item This question paper contains \numquestions\ questions and \numpages\ page(s).
-	\end{enumerate}
-\end{instructions}
+%\begin{instructions}
+%	\begin{enumerate}[label={(\roman*)},itemsep=0pt]
+%		\item Non-programmable Calculators are allowed.
+%		\item Any misprinted values can be assumed suitably.
+%		\item This question paper contains \numquestions\ questions and \numpages\ page(s).
+%	\end{enumerate}
+%\end{instructions}
 	
 	
 	
-\partmarks{$10\times 10 = 100$}
-\part{Answer any TEN  Questions}
-
-%\textbf{Syllabus}
-%\begin{enumerate}
-%	\item[5 marks] Solutions of Cauchy-Euler and
-%	Cauchy-Legendre differential equations
-%	\item[15 marks] Module 04: Solution of differential equations through Laplace transform and matrix method
-%	\item[10 marks] Module 05: Strum Liouville’s problems and power series Solutions:
-%\end{enumerate}
+\partmarks{$5\times 10 = 50$}
+\part{Answer all the  Questions}
 
 \begin{questions}
 
@@ -60,11 +55,11 @@
 \module{01}  \co{01} \level{Easy} \bl{K2} \hots{No}
 
 \question[10]  Find   the Fourier series expansion of 
-$$ f(x) = \begin{cases}
+$ f(x) = \begin{cases}
 	0 & 0\leq x \leq \pi \\
 	\cos x & \pi \leq x \leq  2\pi
 \end{cases}.
-$$
+$
 
 \module{01}  \co{01} \level{Medium} \bl{K2} \hots{No}
 
@@ -81,9 +76,9 @@ $$
 \module{02}  \co{02} \level{Easy} \bl{K2} \hots{No}
 
 \question[10] Find $P$ such that $P^{-1}AP = D$, where $D$ is a diagonal matrix for 
-$$A = \begin{bmatrix}
+$A = \begin{bmatrix}
 	-1 & 1 & 0 \\ 0 & 2 & -1 \\  0 & 0 & 3 
-\end{bmatrix}.$$
+\end{bmatrix}.$
 
 \module{02}  \co{02} \level{Easy} \bl{K2} \hots{No}
 
@@ -96,9 +91,11 @@ Let $A = \begin{bmatrix}
 
 \module{04}  \co{03} \level{Medium} \bl{K2} \hots{No}
 
-\part[5] Use Laplace transform to solve
-$$ y^{\prime\prime} + 4y^{\prime} + 2y = u(t-2), \quad y(0)=0=y^\prime(0),$$
-where $u$ is an unit step function.
+\part
+\begin{subparts}
+\subpart[3] Subpart 01
+\subpart[2] Subpart 02
+\end{subparts}
 \end{parts}
 
 \module{03}  \co{03} \level{Hard} \bl{K2} \hots{No}
@@ -110,12 +107,16 @@ Solve $y^{\prime\prime} - 2y^\prime = e^x \sin x + 5$ using the method of undete
 $y = A + B e^{2x} - \frac 1 2 e^x \sin x$
 \end{solution} 
 
+\partmarks{$5\times 10 = 50$}
+\part{Answer any FIVE  Questions}
+
 \module{03}  \co{03} \level{Medium} \bl{K2} \hots{No}
 
 \question[10]  Solve $(3x+2)^2 y ^{\prime \prime } + 3 ( 3x + 2) y^\prime -36 y = 3x^2 + 4x +1. $
 \begin{solution}
 	$ y = c_1 (3x+2)^2 + c_2 (3x + 2)^{-2} + \frac 1 {108} \left( (3x+2)^2 \log (3x+2) +1 \right)$
 \end{solution}
+
 
 
 
