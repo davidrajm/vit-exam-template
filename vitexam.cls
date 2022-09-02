@@ -152,41 +152,38 @@ David Raj Micheal]
 }
 
 \newcommand{\makeparbox}[1]{%
-	\parbox[t]{0.35\textwidth}{\raggedright #1}
+	\parbox[t]{0.5\textwidth}{\raggedright #1 }
 }
 \newcommand{\makeparboxSecond}[1]{%
-	\parbox[t]{0.25\textwidth}{\raggedright #1}
+	\parbox[t]{0.25\textwidth}{\raggedright #1 \medskip}
 }
 
 
 \newcommand{\printexamtop}{
 	%% --- Exam Top starts --- 
-%	\begin{flushright}
-%		\renewcommand*{\arraystretch}{1.5}
-%		\begin{tabular}{|p{.1\textwidth}c|p{.25\textwidth}|}
-%			\hline 
-%			\textbf{Reg.No} & & \\ \hline 
-%			\textbf{Name}  & &\\ \hline 
-%		\end{tabular}
-%	\end{flushright}
-	
+	\vspace*{-2\baselineskip}
+		\renewcommand*{\arraystretch}{1.5}
+	\hspace{0.625\linewidth}	\begin{tabular}{|p{.1\textwidth}c|p{.25\textwidth}|}
+			\hline 
+			\textbf{Reg.No} & & \\ \hline 
+			\textbf{Name}  & &\\ \hline 
+		\end{tabular}
 	\begin{center}
 		\@logo
 		\textbf{\Large \@exam}
 	\end{center}
-	
-	\begin{center}
-		\renewcommand{\arraystretch}{1.25}
-		\small
-		\begin{tabular}{|llp{.35\textwidth}|llp{.3\textwidth}|} \hline
-			Programme &:& {\@programme}    & Semester &:& {\@semester}  \\ \hline
-			\multirow[t]{2}{*}{Course}   &\multirow[t]{2}{*}{:}& \multirow[t]{2}{*}{ \makeparbox{{\@course}}} 
-			& Code     &:& {\@coursecode}  \\ \cline{4-6}
-			& &  & Slot & : & {\@slot} \\ \hline
-			Faculty 	  &:& \makeparbox{{\@faculty}} & Class ID & : & \makeparboxSecond{{\@classNumber}}   \\ \hline 
-			Time     & : & \@duration & Max.Marks & : & {\@maxmarks}  \\ \hline
-		\end{tabular}
-	\end{center}
+\vspace*{-\baselineskip}
+\renewcommand{\arraystretch}{1.25}
+\renewcommand*{\tabcolsep}{2pt}
+\small
+\begin{longtable}{|llp{.5\linewidth}|llp{.3\linewidth}|} \hline
+	Programme &:& {\@programme}    & Semester &:& {\@semester}  \\ \hline
+	\multirow[t]{2}{*}{Course}   &\multirow[t]{2}{*}{:}& \multirow[t]{2}{*}{\makeparbox{{\@course}}} 
+	& Code     &:& {\@coursecode}  \\ \cline{4-6}
+	& &  & Slot & : & {\@slot} \\ \hline
+	Faculty 	  &:& \makeparbox{{\@faculty}} & Class Nbr & : & \makeparboxSecond{{\@classNumber}}   \\ \hline 
+	Time     & : & \@duration & Max.Marks & : & {\@maxmarks}  \\ \hline
+\end{longtable}
 	%% --- Exam Top ends ---
 	
 	\modifypdfmeta
@@ -354,6 +351,12 @@ David Raj Micheal]
 }
 
 %%%--- For printing labels ----
+\def\@slotFaculty{}
+\newcommand{\slotFaculty}[1]{\def\@slotFaculty{#1}}
+
+\def\@\slotClassNumber{}
+\newcommand{\slotClassNumber}[1]{\def\@slotClassNumber{#1}}
+
 \def\@classrooms{}
 \newcommand{\classrooms}[1]{\def\@classrooms{#1}}
 
@@ -366,8 +369,12 @@ David Raj Micheal]
 \def\@examtime{}
 \newcommand{\examtime}[1]{\def\@examtime{#1}}
 
-\def\@empid{}
-\newcommand{\empid}[1]{\def\@empid{#1}}
+\def\@\slotFacultyempid{}
+\newcommand{\slotFacultyempid}[1]{\def\@slotFacultyempid{#1}}
+
+
+\def\@\slotFacultyMobile{}
+\newcommand{\slotFacultyMobile}[1]{\def\@slotFacultyMobile{#1}}
 
 \RequirePackage{pgffor,pgfmath}
 
@@ -380,7 +387,7 @@ David Raj Micheal]
 			\ifnum\c=\s
 			\begin{flushleft}
 				\large  
-				\renewcommand*{\arraystretch}{1.5}
+				\renewcommand*{\arraystretch}{1.25}
 				\begin{tabular}{|>{\bfseries}l>{\bfseries}cl|}
 					\hline 
 					Programme & : & \@programme\\
@@ -388,9 +395,10 @@ David Raj Micheal]
 					Room Number & : & \class \\
 					Course Code & : & \@coursecode \\
 					Course Name & : & \@course\\
-					Class Id \& Slot & : & \@classNumber\ \@slot \\
+					Class Id \& Slot & : & \@slotClassNumber\ \& \@slot \\
 					Total QP Alloted & : & \student\\
-					Faculty \& Emp. Id & : & \@faculty \space (\@empid) \\ \hline 
+					Faculty \& Emp. Id & : & \@slotFaculty \space (\@slotFacultyempid) \\ 
+					Faculty Mobile No &: & \@slotFacultyMobile\\ \hline 
 				\end{tabular}
 			\end{flushleft}
 		\bigskip
